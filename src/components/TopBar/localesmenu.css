@@ -1,0 +1,33 @@
+#locales-popper {
+  z-index: 5;
+  background-color: #00000003;
+  backdrop-filter: blur(33px);
+  -webkit-backdrop-filter: blur(33px);
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+#locales-popper .MuiPaper-root.locales-menu {
+  padding: 6px 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80px;
+  max-width: 80px;
+}
+
+#locales-popper .MuiPaper-root.locales-menu button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 4px;
+}
+
+#locales-popper .MuiPaper-root.locales-menu button:not(:hover) {
+  background-color: #00000003 !important;
+}
+/*# sourceMappingURL=localesmenu.css.map */

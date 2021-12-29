@@ -1,0 +1,44 @@
+.loading-splash .loading-icon {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation: 3s linear 3s infinite pulse;
+          animation: 3s linear 3s infinite pulse;
+  opacity: 1;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.93);
+            transform: scale(0.93);
+    opacity: 0.5;
+  }
+  60% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.93);
+            transform: scale(0.93);
+    opacity: 0.5;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.93);
+            transform: scale(0.93);
+    opacity: 0.5;
+  }
+  60% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.93);
+            transform: scale(0.93);
+    opacity: 0.5;
+  }
+}
+/*# sourceMappingURL=loading.css.map */

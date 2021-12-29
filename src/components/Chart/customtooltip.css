@@ -1,0 +1,28 @@
+.tooltip-container {
+  min-width: 175px;
+  border: 1px solid rgba(118, 130, 153, 0.2);
+}
+
+.tooltip-container .item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 1.5em;
+}
+
+.tooltip-container .tooltip-bulletpoint {
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  border-radius: 50%;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.tooltip-container .tooltip-date {
+  margin-top: 13px;
+}
+/*# sourceMappingURL=customtooltip.css.map */

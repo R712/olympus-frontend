@@ -1,18 +1,18 @@
-import SquareWOFF from "../assets/fonts/EuclidSquare-Regular.woff";
-import SquareBoldWOFF from "../assets/fonts/EuclidSquare-Bold.woff";
-import SquareSemiBoldWOFF from "../assets/fonts/EuclidSquare-SemiBold.woff";
-import SquareItalicWOFF from "../assets/fonts/EuclidSquare-Italic.woff";
-import SquareLightWOFF from "../assets/fonts/EuclidSquare-Light.woff";
-import SquareMediumWOFF from "../assets/fonts/EuclidSquare-Medium.woff";
+import SquareWOFF from "../assets/fonts/TitilliumWeb-Regular.woff";
+import SquareBoldWOFF from "../assets/fonts/TitilliumWeb-Bold.woff";
+import SquareSemiBoldWOFF from "../assets/fonts/TitilliumWeb-SemiBold.woff";
+import SquareItalicWOFF from "../assets/fonts/TitilliumWeb-Italic.woff";
+import SquareLightWOFF from "../assets/fonts/TitilliumWeb-Light.woff";
+import SquareMediumWOFF from "../assets/fonts/TitilliumWeb-SemiBold.woff";
 
 const square = {
-  fontFamily: "Square",
+  fontFamily: "Titillium Web",
   fontStyle: "normal",
   fontDisplay: "swap",
   fontWeight: 400,
   src: `
-		local('EuclidSquare'),
-		local('EuclidSquare-Regular'),
+		local('Titillium Web'),
+		local('Titillium Web-Regular'),
 		url(${SquareWOFF}) format('woff')
 	`,
   unicodeRange:
@@ -20,7 +20,7 @@ const square = {
 };
 
 const squareLight = {
-  fontFamily: "Square",
+  fontFamily: "Titillium Web",
   fontStyle: "normal",
   fontDisplay: "swap",
   fontWeight: 300,
@@ -34,13 +34,13 @@ const squareLight = {
 };
 
 const squareMedium = {
-  fontFamily: "Square",
+  fontFamily: "Titillium Web",
   fontStyle: "medium",
   fontDisplay: "swap",
   fontWeight: 500,
   src: `
-		local('EuclidSquare'),
-		local('EuclidSquare-Medium'),
+		local('Titillium Web'),
+		local('Titillium Web-Medium'),
 		url(${SquareMediumWOFF}) format('woff')
 	`,
   unicodeRange:
@@ -48,13 +48,13 @@ const squareMedium = {
 };
 
 const squareSemiBold = {
-  fontFamily: "Square",
+  fontFamily: "Titillium Web",
   fontStyle: "normal",
   fontDisplay: "swap",
   fontWeight: 600,
   src: `
-		local('EuclidSquare-SemiBold'),
-		local('EuclidSquare-SemiBold'),
+		local('Titillium Web-SemiBold'),
+		local('Titillium Web-SemiBold'),
 		url(${SquareSemiBoldWOFF}) format('woff')
 	`,
   unicodeRange:
@@ -62,13 +62,13 @@ const squareSemiBold = {
 };
 
 const squareBold = {
-  fontFamily: "Square",
+  fontFamily: "Titillium Web",
   fontStyle: "bold",
   fontDisplay: "swap",
   fontWeight: 700,
   src: `
-		local('EuclidSquare-Bold'),
-		local('EuclidSquare-Bold'),
+		local('Titillium Web-Bold'),
+		local('Titillium Web-Bold'),
 		url(${SquareBoldWOFF}) format('woff')
 	`,
   unicodeRange:
@@ -76,13 +76,13 @@ const squareBold = {
 };
 
 const squareItalic = {
-  fontFamily: "Square",
+  fontFamily: "Titillium Web",
   fontStyle: "italic",
   fontDisplay: "swap",
   fontWeight: 400,
   src: `
-		local('EuclidSquare-Italic'),
-		local('EuclidSquare-Italic'),
+		local('Titillium Web-Italic'),
+		local('Titillium Web-Italic'),
 		url(${SquareItalicWOFF}) format('woff')
 	`,
   unicodeRange:

@@ -1,0 +1,33 @@
+.network-menu-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.network-menu-container .network-menu-button {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.network-menu-container .network-menu-button-text {
+  padding-left: 5px;
+}
+
+.network-menu-container img {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.mobile .network-menu-button-text {
+  display: none !important;
+}
+/*# sourceMappingURL=networkmenu.css.map */

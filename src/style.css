@@ -1,0 +1,128 @@
+* {
+  outline: none;
+  -ms-overflow-style: none !important;
+  /* IE and Edge */
+  scrollbar-width: none !important;
+  /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none !important;
+}
+
+html,
+body,
+#root {
+  background: url("assets/images/bg-texture.png") no-repeat center fixed !important;
+  font-family: "Square";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  z-index: 1;
+  background-size: cover;
+  font-family: "Square";
+  overflow: hidden;
+  -webkit-transition: all ease 0.33ms;
+  transition: all ease 0.33ms;
+}
+
+.MuiDrawer-paperAnchorDockedLeft {
+  border-right: 0 !important;
+}
+
+.ohm-card {
+  max-width: 833px;
+}
+
+.ohm-card .card-header {
+  width: 100%;
+  min-height: 33px;
+  margin-bottom: 10px;
+}
+
+.ohm-card .card-header h5 {
+  font-weight: 600 !important;
+}
+
+.ohm-card .help-text {
+  margin: 10px 0px;
+}
+
+.ohm-card .data-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 12px 0px;
+}
+
+.ohm-card .data-row-centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 12px 0px;
+}
+
+.ohm-card .data-row-centered .marginedBtn {
+  margin: 0.3rem;
+}
+
+.ohm-pairs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield !important;
+}
+
+a:hover svg {
+  color: inherit;
+}
+
+.tooltip {
+  z-index: 9999999;
+}
+/*# sourceMappingURL=style.css.map */

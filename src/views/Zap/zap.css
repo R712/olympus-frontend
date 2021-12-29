@@ -1,0 +1,155 @@
+#zap-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+#zap-select-token-modal .MuiListItemText-primary,
+#zap-select-token-modal .MuiListItemText-secondary {
+  text-align: right;
+}
+
+#olyzaps-cta .cta-box {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#olyzaps-cta .icons-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#olyzaps-cta .button-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#olyzaps-cta .cta-header {
+  font-size: 1rem;
+  line-height: 1.24rem;
+  padding-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+#olyzaps-cta .cta-subheader {
+  font-weight: 400;
+}
+
+#olyzaps-info .oly-info-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+
+#olyzaps-info .oly-info-header-box {
+  padding-bottom: 1.5rem;
+}
+
+#olyzaps-info .oly-info-body-header {
+  padding-bottom: 0.5rem;
+}
+
+#olyzaps-info .oly-info-body {
+  line-height: 1.25rem;
+}
+
+#olyzaps-info .button-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2rem;
+}
+
+#olyzaps-info .learn-more-button svg {
+  margin-left: 4px;
+  vertical-align: middle;
+  font-size: 1.1em;
+  height: 1.15rem;
+  width: 1.15rem;
+}
+
+#olyzaps-info .learn-more-button:hover svg {
+  color: inherit;
+}
+
+.stake-action-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 10px;
+}
+
+.zap-input {
+  width: 100%;
+  margin-block: 20px;
+  min-height: 70px;
+}
+
+.zap-stake-button {
+  min-width: 140px !important;
+  height: 43px !important;
+}
+
+.stake-wallet-notification {
+  text-align: center;
+}
+
+.stake-wallet-notification .wallet-menu {
+  text-align: center;
+}
+
+.stake-wallet-notification .wallet-menu .connect-button {
+  max-width: 300px !important;
+  min-width: 240px !important;
+  margin-bottom: 15px;
+}
+/*# sourceMappingURL=zap.css.map */

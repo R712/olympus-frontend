@@ -1,0 +1,45 @@
+.announcement-banner {
+  z-index: 5;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0.9rem auto;
+  width: 100%;
+}
+
+.announcement-banner .new-network {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.announcement-banner .MuiPaper-root {
+  border-radius: 10px;
+}
+
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .announcement-banner .new-network {
+    background: -webkit-gradient(linear, left top, right top, color-stop(1.58%, #3a4148ee), color-stop(99%, #333847ff)) !important;
+    background: linear-gradient(90deg, #3a4148ee 1.58%, #333847ff 99%) !important;
+  }
+}
+
+.mobile .announcement-banner {
+  top: unset;
+  bottom: 0 !important;
+  margin: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  position: fixed;
+}
+/*# sourceMappingURL=Announcement.css.map */

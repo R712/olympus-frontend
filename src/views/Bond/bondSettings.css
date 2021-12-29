@@ -1,0 +1,49 @@
+#hades {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  background-color: #55555555;
+}
+
+#hades .ohm-popover {
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#hades .ohm-popover h3 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 75%;
+  text-align: center;
+}
+
+#hades .ohm-popover label {
+  margin: 33px 0 10px;
+}
+
+#hades .ohm-popover .help-text {
+  margin: 10px;
+}
+
+#hades .mobile .ohm-popover {
+  max-width: 400px;
+}
+/*# sourceMappingURL=bondSettings.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACX,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,IAAI;CAIjB;;AAND,AAGE,YAHU,CAGV,EAAE,CAAC;EACD,WAAW,EAAE,cAAc;CAC5B",
+    "sources": [
+        "cardheader.scss"
+    ],
+    "names": [],
+    "file": "cardheader.css"
+}

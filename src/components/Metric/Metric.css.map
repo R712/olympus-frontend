@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAC;EACN,IAAI,EAAE,CAAC;EACP,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,aAAa,EAAE,QAAQ;EAEvB,QAAQ,EAAE,MAAM;CAKjB;;AAXD,AAQE,OARK,CAQL,EAAE,CAAC;EACD,WAAW,EAAE,GAAG;CACjB",
+    "sources": [
+        "Metric.scss"
+    ],
+    "names": [],
+    "file": "Metric.css"
+}

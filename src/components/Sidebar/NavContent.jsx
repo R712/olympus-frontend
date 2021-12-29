@@ -5,7 +5,7 @@ import externalUrls from "./externalUrls";
 import { ReactComponent as StakeIcon } from "../../assets/icons/stake.svg";
 import { ReactComponent as BondIcon } from "../../assets/icons/bond.svg";
 import { ReactComponent as DashboardIcon } from "../../assets/icons/dashboard.svg";
-import { ReactComponent as OlympusIcon } from "../../assets/icons/olympus-nav-header.svg";
+import { ReactComponent as OlympusIcon } from "../../assets/images/logo-columbus.svg";
 import { ReactComponent as PoolTogetherIcon } from "../../assets/icons/33-together.svg";
 import { ReactComponent as GiveIcon } from "../../assets/icons/give.svg";
 import { ReactComponent as ZapIcon } from "../../assets/icons/zap.svg";
@@ -13,7 +13,7 @@ import { ReactComponent as NewIcon } from "../../assets/icons/new-icon.svg";
 import { ReactComponent as WrapIcon } from "../../assets/icons/wrap.svg";
 import { ReactComponent as BridgeIcon } from "../../assets/icons/bridge.svg";
 import { ReactComponent as ArrowUpIcon } from "../../assets/icons/arrow-up.svg";
-import { ReactComponent as ProIcon } from "../../assets/Olympus Logo.svg";
+import { ReactComponent as ProIcon } from "../../assets/images/logo-columbus.svg";
 import { Trans } from "@lingui/macro";
 import { trim, shorten } from "../../helpers";
 import { useAddress } from "src/hooks/web3Context";
@@ -88,8 +88,8 @@ function NavContent() {
               <SvgIcon
                 color="primary"
                 component={OlympusIcon}
-                viewBox="0 0 151 100"
-                style={{ minWdth: "151px", minHeight: "98px", width: "151px" }}
+                viewBox="0 0 153 24"
+                style={{ minWdth: "153px", minHeight: "24px", width: "153px" }}
               />
             </Link>
 

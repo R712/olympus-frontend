@@ -1,0 +1,74 @@
+.call-to-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 97%;
+  border-radius: 10px;
+  margin: 0.9rem auto;
+  padding: 30px;
+}
+
+@media (max-width: 500px) {
+  .call-to-action {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .call-to-action .actionable {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+.call-to-action .learn-more-button {
+  margin-right: 15px;
+}
+
+.call-to-action .learn-more-button p {
+  margin-right: 5px;
+}
+
+.call-to-action .migrate-button {
+  font-size: 0.875rem;
+  height: 33px;
+  padding: 9px 20px;
+}
+
+.dark .call-to-action {
+  background-color: #f8cc82;
+  color: #253449;
+}
+
+.dark .call-to-action .migrate-button {
+  background-color: #253449;
+  color: white;
+}
+
+.dark .call-to-action .learn-more-button {
+  color: #253449;
+  border: 1px solid #768299;
+}
+
+.dark .call-to-action .learn-more-button .MuiSvgIcon-root {
+  color: #768299;
+}
+
+.light .call-to-action {
+  background-color: #ffe5b4;
+}
+
+.light .migrate-button {
+  background-color: #768299;
+}
+
+.light .learn-more-button {
+  border: 1px solid #768299;
+}
+/*# sourceMappingURL=calltoaction.css.map */

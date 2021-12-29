@@ -1,0 +1,37 @@
+.info-icon {
+  cursor: pointer;
+}
+
+.tooltip {
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-radius: 10px;
+  padding: 0 !important;
+  height: unset;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  max-height: -webkit-min-content;
+  max-height: -moz-min-content;
+  max-height: min-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 5px !important;
+}
+
+.info-tooltip {
+  background-color: #00000001;
+  backdrop-filter: blur(33px);
+  -webkit-backdrop-filter: blur(33px);
+  width: 100% !important;
+  max-width: 280px !important;
+  margin: 0px !important;
+  border: 1px solid rgba(118, 130, 153, 0.2);
+  white-space: pre-wrap !important;
+}
+
+.info-tooltip .info-tooltip-text {
+  line-height: 130%;
+}
+/*# sourceMappingURL=infotooltip.css.map */

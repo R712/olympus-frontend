@@ -1,0 +1,122 @@
+#treasury-dashboard-view {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 100%;
+  min-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-y: auto;
+  -ms-overflow-style: none !important;
+  /* IE and Edge */
+  scrollbar-width: none !important;
+  /* Firefox */
+}
+
+#treasury-dashboard-view::-webkit-scrollbar {
+  display: none !important;
+}
+
+#treasury-dashboard-view .ohm-card {
+  max-width: unset !important;
+  width: 100%;
+  margin: auto;
+}
+
+#treasury-dashboard-view .ohm-card .card-header {
+  margin-bottom: 1rem;
+}
+
+#treasury-dashboard-view .ohm-card.ohm-chart-card {
+  height: 355px;
+}
+
+#treasury-dashboard-view .ohm-card.ohm-chart-card .chart-card-header {
+  padding: 0px 20px !important;
+  min-width: 300px;
+}
+
+#treasury-dashboard-view .hero-metrics {
+  width: 100%;
+  margin-bottom: 23px;
+  text-align: center;
+}
+
+#treasury-dashboard-view .hero-metrics .ohm-card {
+  max-width: unset !important;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#treasury-dashboard-view .hero-metrics .ohm-card h5 {
+  font-weight: bold;
+}
+
+#treasury-dashboard-view .data-grid {
+  overflow: hidden;
+}
+
+.smaller .ohm-card {
+  width: 97%;
+}
+
+.smaller .hero-metrics .ohm-card > .MuiBox-root {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.smaller .hero-metrics .ohm-card div.metric {
+  text-align: left !important;
+}
+
+.mobile div.metric {
+  white-space: nowrap;
+  min-width: 30% !important;
+  max-width: 60%;
+  text-align: left !important;
+}
+
+.mobile div.metric.market, .mobile div.metric.price, .mobile div.metric.wsoprice, .mobile div.metric.circ, .mobile div.metric.bpo, .mobile div.metric.index {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.very-small .hero-metrics .ohm-card > .MuiBox-root {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=treasury-dashboard.css.map */

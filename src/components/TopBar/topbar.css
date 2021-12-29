@@ -1,0 +1,67 @@
+.dapp-topbar {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dapp-topbar a,
+.dapp-topbar button {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  margin: 6px !important;
+  min-width: -webkit-fit-content !important;
+  min-width: -moz-fit-content !important;
+  min-width: fit-content !important;
+  min-height: 40px !important;
+}
+
+.dapp-topbar a#hamburger,
+.dapp-topbar button#hamburger {
+  padding: 11px !important;
+}
+
+.dapp-topbar a.toggle-button,
+.dapp-topbar button.toggle-button {
+  padding: 9.5px !important;
+}
+
+.tablet .dapp-topbar {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pending-txn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px !important;
+}
+
+.pending-txn-container .MuiButton-label {
+  margin-right: 0;
+  -webkit-transition: all 0.33s ease-out;
+  transition: all 0.33s ease-out;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#ohm-popper-pending .MuiPaper-root.ohm-menu a {
+  padding-right: 20px !important;
+}
+
+.caret-down {
+  position: absolute;
+  right: 0.4rem;
+}
+
+.hovered-button .MuiButton-label {
+  margin-right: 0.5rem;
+  -webkit-transition: all 0.33s ease-out;
+  transition: all 0.33s ease-out;
+}
+/*# sourceMappingURL=topbar.css.map */
