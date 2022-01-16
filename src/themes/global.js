@@ -39,7 +39,7 @@ const commonSettings = {
     },
     h2: {
       fontSize: "2.3rem",
-      fontWeight: 600,
+      fontWeight: 700,
       letterSpacing: "1.3px",
     },
     h3: {
@@ -120,12 +120,12 @@ const commonSettings = {
           borderRadius: "10px",
           maxWidth: "833px",
           width: "97%",
-          marginBottom: "1.8rem",
+          marginBottom: "2rem",
           overflow: "hidden",
         },
         "&.ohm-menu": {
           padding: "22px 0px",
-          borderRadius: "10px",
+          borderRadius: "8px",
           margin: "0px",
         },
         "&.ohm-chart-card": {
@@ -133,7 +133,7 @@ const commonSettings = {
           whiteSpace: "nowrap",
           maxWidth: "700px",
           width: "97%",
-          marginBottom: "1.8rem",
+          marginBottom: "2rem",
         },
       },
     },

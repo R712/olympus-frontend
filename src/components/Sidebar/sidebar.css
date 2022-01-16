@@ -43,23 +43,13 @@
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-  margin: 40px 0 10px 0;
+  margin: 50px 0 10px 0;
 }
 
 .branding-header .branding-header-icon {
   width: 50px;
   display: block;
   margin: 0 auto;
-}
-
-.branding-header .wallet-link {
-  margin: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .branding-header .avatar {
@@ -72,14 +62,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 10px;
   min-height: -webkit-max-content;
   min-height: -moz-max-content;
   min-height: max-content;
@@ -96,18 +85,18 @@
 }
 
 .dapp-menu-bottom {
-  height: 40vh;
-  min-height: 30vh;
+  height: 80px;
 }
 
 .dapp-menu-links {
-  min-height: 35vh;
+  min-height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .dapp-nav a {
@@ -126,6 +115,11 @@
   vertical-align: -4px;
 }
 
+.dapp-nav a h6 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
 .dapp-menu-external-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -137,18 +131,12 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 33px;
-}
-
-.dapp-menu-external-links h6 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 24px 0;
+  padding: 24px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .dapp-menu-external-links a {
@@ -159,7 +147,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.dapp-menu-external-links a h6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .dapp-menu-external-links a svg {
@@ -182,9 +181,10 @@
 
 .bond-discounts {
   text-align: left;
-  color: #999999;
+  color: #FFF;
   padding-left: 33px;
   margin-top: 8px;
+  opacity: .6;
 }
 
 .bond-discounts .discounts-accordion {
@@ -282,14 +282,19 @@
   padding: 1.3rem;
 }
 
+.social-row a {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
 .social-row a:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.18);
+          transform: scale(1.18);
 }
 
 .social-row a img {
-  height: 20px;
-  width: 20px;
+  height: 18px;
+  width: 18px;
 }
 
 .mobile .show .dapp-sidebar .dapp-menu-links {

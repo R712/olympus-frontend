@@ -8,10 +8,11 @@ import { ReactComponent as DashboardIcon } from "../../assets/icons/dashboard.sv
 import { ReactComponent as OlympusIcon } from "../../assets/images/logo-columbus.svg";
 import { ReactComponent as PoolTogetherIcon } from "../../assets/icons/33-together.svg";
 import { ReactComponent as GiveIcon } from "../../assets/icons/give.svg";
+import { ReactComponent as WalletIDIcon } from "../../assets/icons/walletid.svg";
 import { ReactComponent as ZapIcon } from "../../assets/icons/zap.svg";
 import { ReactComponent as NewIcon } from "../../assets/icons/new-icon.svg";
-import { ReactComponent as WrapIcon } from "../../assets/icons/wrap.svg";
-import { ReactComponent as BridgeIcon } from "../../assets/icons/bridge.svg";
+// import { ReactComponent as WrapIcon } from "../../assets/icons/wrap.svg";
+// import { ReactComponent as BridgeIcon } from "../../assets/icons/bridge.svg";
 import { ReactComponent as ArrowUpIcon } from "../../assets/icons/arrow-up.svg";
 import { ReactComponent as ProIcon } from "../../assets/images/logo-columbus.svg";
 import { Trans } from "@lingui/macro";
@@ -88,19 +89,10 @@ function NavContent() {
               <SvgIcon
                 color="primary"
                 component={OlympusIcon}
-                viewBox="0 0 153 24"
-                style={{ minWdth: "153px", minHeight: "24px", width: "153px" }}
+                viewBox="0 0 195 32"
+                style={{ minWdth: "180px", minHeight: "32px", width: "180px" }}
               />
             </Link>
-
-            {address && (
-              <div className="wallet-link">
-                {ensAvatar && <img className="avatar" src={ensAvatar} alt={address} />}
-                <Link href={`https://etherscan.io/address/${address}`} target="_blank">
-                  {ensName || shorten(address)}
-                </Link>
-              </div>
-            )}
           </Box>
 
           <div className="dapp-menu-links">
@@ -202,22 +194,6 @@ function NavContent() {
                     </Typography>
                   </Link>
 
-                  <Link
-                    component={NavLink}
-                    id="zap-nav"
-                    to="/zap"
-                    isActive={(match, location) => {
-                      return checkPage(match, location, "zap");
-                    }}
-                    className={`button-dapp-menu ${isActive ? "active" : ""}`}
-                  >
-                    <Box display="flex" alignItems="center">
-                      <SvgIcon component={ZapIcon} color="primary" />
-                      <Typography variant="h6">OlyZaps</Typography>
-                      {/* <SvgIcon component={NewIcon} viewBox="21 -2 20 20" style={{ width: "80px" }} /> */}
-                    </Box>
-                  </Link>
-
                   {EnvHelper.isGiveEnabled(location.search) ? (
                     <>
                       <Link
@@ -240,7 +216,7 @@ function NavContent() {
                     <></>
                   )}
 
-                  <Link
+                  {/* <Link
                     component={NavLink}
                     id="wrap-nav"
                     to="/wrap"
@@ -251,9 +227,7 @@ function NavContent() {
                   >
                     <Box display="flex" alignItems="center">
                       <SvgIcon component={WrapIcon} color="primary" viewBox="1 0 20 22" />
-                      {/* <WrapIcon /> */}
                       <Typography variant="h6">Wrap</Typography>
-                      {/* <SvgIcon component={WrapIcon} viewBox="21 -2 20 20" style={{ width: "80px" }} /> */}
                     </Box>
                   </Link>
 
@@ -271,19 +245,7 @@ function NavContent() {
                         className="external-site-link-icon"
                       />
                     </Typography>
-                  </Link>
-
-                  <Box className="menu-divider">
-                    <Divider />
-                  </Box>
-
-                  <Link href="https://pro.olympusdao.finance/" target="_blank" className="external-site-link">
-                    <Box display="flex" alignItems="center">
-                      <SvgIcon component={ProIcon} color="primary" color="primary" viewBox="0 0 50 50" />
-                      <Typography variant="h6">Olympus Pro</Typography>
-                      <SvgIcon component={ArrowUpIcon} className="external-site-link-icon" />
-                    </Box>
-                  </Link>
+                  </Link> */}
 
                   {/* <Link
                     component={NavLink}
@@ -299,13 +261,10 @@ function NavContent() {
                       3,3 Together
                     </Typography>
                   </Link> */}
-                  <Box className="menu-divider">
-                    <Divider />
-                  </Box>
                 </>
               ) : (
                 <>
-                  <Link
+                  {/* <Link
                     component={NavLink}
                     id="wrap-nav"
                     to="/wrap"
@@ -316,13 +275,11 @@ function NavContent() {
                   >
                     <Box display="flex" alignItems="center">
                       <SvgIcon component={WrapIcon} color="primary" viewBox="1 0 20 22" />
-                      {/* <WrapIcon /> */}
                       <Typography variant="h6">Wrap</Typography>
-                      {/* <SvgIcon component={WrapIcon} viewBox="21 -2 20 20" style={{ width: "80px" }} /> */}
                     </Box>
-                  </Link>
+                  </Link> */}
 
-                  <Link
+                  {/* <Link
                     href={"https://synapseprotocol.com/?inputCurrency=gOHM&outputCurrency=gOHM&outputChain=43114"}
                     target="_blank"
                   >
@@ -331,24 +288,34 @@ function NavContent() {
                       <Trans>Bridge</Trans>
                       <SvgIcon style={{ marginLeft: "5px" }} component={ArrowUpIcon} />
                     </Typography>
-                  </Link>
+                  </Link> */}
                 </>
               )}
+
+              <div className="dapp-menu-external-links">
+                {address && (
+                  <Link href={`https://etherscan.io/address/${address}`} target="_blank" className="external-site-link">
+                    <Typography variant="h6">
+                      <SvgIcon color="primary" component={WalletIDIcon} />
+                    </Typography>
+                    <Typography variant="h6">{ensName || shorten(address)}</Typography>
+                    <SvgIcon component={ArrowUpIcon} className="external-site-link-icon" />
+                  </Link>
+                )}
+                {Object.keys(externalUrls).map((link, i) => {
+                  return (
+                    <Link key={i} href={`${externalUrls[link].url}`} target="_blank" className="external-site-link">
+                      <Typography variant="h6">{externalUrls[link].icon}</Typography>
+                      <Typography variant="h6">{externalUrls[link].title}</Typography>
+                      <SvgIcon component={ArrowUpIcon} className="external-site-link-icon" />
+                    </Link>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>
         <Box className="dapp-menu-bottom" display="flex" justifyContent="space-between" flexDirection="column">
-          <div className="dapp-menu-external-links">
-            {Object.keys(externalUrls).map((link, i) => {
-              return (
-                <Link key={i} href={`${externalUrls[link].url}`} target="_blank" className="external-site-link">
-                  <Typography variant="h6">{externalUrls[link].icon}</Typography>
-                  <Typography variant="h6">{externalUrls[link].title}</Typography>
-                  <SvgIcon component={ArrowUpIcon} className="external-site-link-icon" />
-                </Link>
-              );
-            })}
-          </div>
           <div className="dapp-menu-social">
             <Social />
           </div>
