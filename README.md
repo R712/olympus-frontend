@@ -4,7 +4,7 @@ This is the front-end repo for Olympus that allows users be part of the future o
 
 **_ Note We're currently in the process of switching to TypeScript. Please read this guide on how to use TypeScript for this repository. <https://github.com/OlympusDAO/olympus-frontend/wiki/TypeScript-Refactor-General-Guidelines> _**
 
-**_ GOO에 맞추어 디자인 커스텀이 진행중인 branch입니다.
+## 💡💡💡💡💡 GOO에 맞추어 디자인 커스텀이 진행중인 branch입니다. 💡💡💡💡💡
 
 ## 🔧 Setting up Local Development
 
