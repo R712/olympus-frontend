@@ -44,6 +44,8 @@
           align-items: center;
   text-decoration: none;
   margin: 50px 0 10px 0;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .branding-header .branding-header-icon {
@@ -56,6 +58,15 @@
   margin-right: 8px;
   height: 20px;
   border-radius: 100px;
+}
+
+.branding-header svg {
+  display: block;
+  margin: 0 auto;
+}
+
+.branding-header svg + svg {
+  margin-top: 16px;
 }
 
 .dapp-menu-top {
@@ -82,42 +93,94 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-}
-
-.dapp-menu-bottom {
-  height: 80px;
-}
-
-.dapp-menu-links {
-  min-height: 40vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
 }
 
-.dapp-nav a {
-  margin-top: 0.7rem;
-  margin-left: 33px;
+.dapp-menu-top .dapp-nav a {
+  margin: 10px 28px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 0.5rem;
 }
 
-.dapp-nav a svg {
+.dapp-menu-top .dapp-nav a svg {
   width: 20px;
   height: 20px;
   margin-right: 12px;
-  vertical-align: -4px;
+  vertical-align: -2px;
 }
 
-.dapp-nav a h6 {
+.dapp-menu-top .dapp-nav a h6 {
   font-weight: 700;
   font-size: 20px;
+}
+
+.dapp-menu-top .dapp-nav a {
+  opacity: .5;
+}
+
+.dapp-menu-top .dapp-nav a:hover {
+  opacity: 1;
+}
+
+.dapp-menu-top .dapp-nav a:hover svg {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.dapp-menu-bottom {
+  margin: 24px;
+  padding: 12px 0;
+  -webkit-box-shadow: inset 0 4px 40px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0 4px 40px rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dapp-menu-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.dapp-menu-links .button-dapp-menu.active {
+  position: relative;
+  text-decoration: none !important;
+}
+
+.dapp-menu-links .button-dapp-menu.active h6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 32px;
+  font-size: 20px;
+}
+
+.dapp-menu-links .button-dapp-menu.active svg {
+  height: 24px;
+}
+
+.dapp-menu-links .button-dapp-menu.active h6::after {
+  content: '';
+  margin: 0 0 0 8px;
+  width: 6px;
+  height: 6px;
+  background: #268DFF;
+  border-radius: 4px;
 }
 
 .dapp-menu-external-links {
@@ -147,7 +210,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .dapp-menu-external-links a h6 {
@@ -157,7 +220,7 @@
   -ms-flex-item-align: center;
       align-self: center;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 20px;
 }
 
@@ -166,6 +229,14 @@
   height: 20px;
   margin-right: 12px;
   vertical-align: middle;
+}
+
+.light .dapp-menu-external-links {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.external-site-link h6 {
+  font-size: 15px !important;
 }
 
 .external-site-link .external-site-link-icon {
@@ -212,18 +283,23 @@
 }
 
 .bond-discounts .discounts-accordion .MuiAccordionSummary-content .MuiTypography-body2 {
-  color: #999999;
-  margin-left: 33px;
+  padding: 6px 8px 5px;
+  background: #FFFFFF;
+  color: #000025;
+  margin: 0 16px 0 20px;
+  font-weight: 700;
+  font-size: 12px !important;
+  border-radius: 2px;
 }
 
 .bond-discounts .discounts-accordion .MuiAccordionSummary-expandIcon {
-  color: inherit;
+  color: #00002588;
   height: inherit;
   padding-top: 0;
   padding-bottom: 0;
   position: absolute;
-  left: 112px;
-  top: -3px;
+  right: 24px;
+  top: 4px;
   -webkit-transition: left 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, top 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition: left 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, top 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition: left 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, top 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -231,8 +307,8 @@
 }
 
 .bond-discounts .discounts-accordion .MuiAccordionSummary-expandIcon.Mui-expanded {
-  left: 114px;
-  top: 1px;
+  right: 24px;
+  top: 6px;
 }
 
 .bond-discounts .discounts-accordion .MuiAccordionDetails-root {
@@ -285,11 +361,13 @@
 .social-row a {
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+  opacity: .5;
 }
 
 .social-row a:hover {
   -webkit-transform: scale(1.18);
           transform: scale(1.18);
+  opacity: 1;
 }
 
 .social-row a img {

@@ -1,6 +1,6 @@
 #locales-popper {
   z-index: 5;
-  background-color: #00000003;
+  background-color: #F6FBFF;
   backdrop-filter: blur(33px);
   -webkit-backdrop-filter: blur(33px);
   margin-top: 10px;
@@ -17,7 +17,10 @@
       text-align: left;
       margin-bottom: 4px;
       &:not(:hover) {
-        background-color: #00000003 !important;
+        background-color: #F6FBFF !important;
+      }
+      &:hover {
+        background-color: #FFF !important;
       }
     }
   }

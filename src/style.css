@@ -13,7 +13,6 @@
 html,
 body,
 #root {
-  background: url("assets/images/bg-texture.png") no-repeat center fixed !important;
   font-family: "Square";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -39,11 +38,27 @@ body {
   -ms-flex-direction: column;
       flex-direction: column;
   z-index: 1;
-  background-size: cover;
   font-family: "Square";
+  line-height: 1.45;
   overflow: hidden;
   -webkit-transition: all ease 0.33ms;
   transition: all ease 0.33ms;
+  cursor: default;
+  background-size: cover !important;
+}
+
+.app.dark {
+  background: url("assets/images/bg-texture-boke.png") no-repeat right bottom fixed;
+}
+
+.app.light {
+  background: url("assets/images/bg-texture-light.png") no-repeat right bottom fixed;
+}
+
+.app .MuiContainer-root,
+.app .MuiGrid-root,
+.app .MuiBox-root {
+  max-width: 960px;
 }
 
 .MuiDrawer-paperAnchorDockedLeft {
@@ -52,16 +67,22 @@ body {
 
 .ohm-card {
   max-width: 833px;
+  -webkit-box-shadow: 0 4px 40px rgba(0, 0, 37, 0.1) !important;
+          box-shadow: 0 4px 40px rgba(0, 0, 37, 0.1) !important;
 }
 
 .ohm-card .card-header {
   width: 100%;
   min-height: 33px;
-  margin-bottom: 10px;
 }
 
 .ohm-card .card-header h5 {
-  font-weight: 600 !important;
+  font-weight: 700 !important;
+}
+
+.ohm-card .card-header .MuiTypography-body2 {
+  padding: 4px 0 0;
+  opacity: 0.4;
 }
 
 .ohm-card .help-text {
@@ -122,7 +143,39 @@ a:hover svg {
   color: inherit;
 }
 
+a:hover {
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
 .tooltip {
   z-index: 9999999;
+}
+
+.MuiAlert-root {
+  cursor: help;
+  background: rgba(38, 141, 255, 0.6) !important;
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  border-radius: 8px !important;
+}
+
+.MuiAlert-root p {
+  line-height: 1.5;
+}
+
+a,
+button,
+input[type=radio],
+input[type=checkbox] {
+  cursor: pointer;
+}
+
+input[type=text] {
+  cursor: text;
+}
+
+.MuiGrid-item {
+  padding: 12px !important;
 }
 /*# sourceMappingURL=style.css.map */

@@ -9,11 +9,13 @@
 .dapp-topbar button {
   white-space: nowrap !important;
   overflow: hidden !important;
-  margin: 6px !important;
+  margin: 8px !important;
   min-width: -webkit-fit-content !important;
   min-width: -moz-fit-content !important;
   min-width: fit-content !important;
-  min-height: 40px !important;
+  min-height: 42px !important;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
 .dapp-topbar a#hamburger,
@@ -46,8 +48,15 @@
   margin-right: 0;
   -webkit-transition: all 0.33s ease-out;
   transition: all 0.33s ease-out;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
+}
+
+.MuiButton-label {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #ohm-popper-pending .MuiPaper-root.ohm-menu a {
@@ -57,6 +66,10 @@
 .caret-down {
   position: absolute;
   right: 0.4rem;
+}
+
+.hovered-button {
+  background: rgba(38, 141, 255, 0.2);
 }
 
 .hovered-button .MuiButton-label {

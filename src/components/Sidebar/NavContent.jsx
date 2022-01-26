@@ -6,6 +6,7 @@ import { ReactComponent as StakeIcon } from "../../assets/icons/stake.svg";
 import { ReactComponent as BondIcon } from "../../assets/icons/bond.svg";
 import { ReactComponent as DashboardIcon } from "../../assets/icons/dashboard.svg";
 import { ReactComponent as OlympusIcon } from "../../assets/images/logo-symbol.svg";
+import { ReactComponent as OlympusTypo } from "../../assets/images/logo-typo.svg";
 import { ReactComponent as PoolTogetherIcon } from "../../assets/icons/33-together.svg";
 import { ReactComponent as GiveIcon } from "../../assets/icons/give.svg";
 import { ReactComponent as WalletIDIcon } from "../../assets/icons/walletid.svg";
@@ -14,7 +15,7 @@ import { ReactComponent as NewIcon } from "../../assets/icons/new-icon.svg";
 // import { ReactComponent as WrapIcon } from "../../assets/icons/wrap.svg";
 // import { ReactComponent as BridgeIcon } from "../../assets/icons/bridge.svg";
 import { ReactComponent as ArrowUpIcon } from "../../assets/icons/arrow-up.svg";
-import { ReactComponent as ProIcon } from "../../assets/images/logo-columbus.svg";
+import { ReactComponent as ProIcon } from "../../assets/images/logo-symbol.svg";
 import { Trans } from "@lingui/macro";
 import { trim, shorten } from "../../helpers";
 import { useAddress } from "src/hooks/web3Context";
@@ -89,8 +90,14 @@ function NavContent() {
               <SvgIcon
                 color="primary"
                 component={OlympusIcon}
-                viewBox="0 0 195 32"
-                style={{ minWdth: "180px", minHeight: "32px", width: "180px" }}
+                viewBox="0 0 48 60"
+                style={{ minWdth: "48px", minHeight: "60px", width: "48px" }}
+              />
+              <SvgIcon
+                color="primary"
+                component={OlympusTypo}
+                viewBox="0 0 160 32"
+                style={{ minWdth: "160px", minHeight: "32px", width: "160px" }}
               />
             </Link>
           </Box>
@@ -136,8 +143,8 @@ function NavContent() {
                           expandIcon={
                             <ExpandMore
                               className="discounts-expand"
-                              viewbox="0 0 12 12"
-                              style={{ width: "18px", height: "18px" }}
+                              viewbox="0 0 14 14"
+                              style={{ width: "14px", height: "14px" }}
                             />
                           }
                         >

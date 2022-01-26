@@ -1,6 +1,6 @@
 #locales-popper {
   z-index: 5;
-  background-color: #00000003;
+  background-color: #F6FBFF;
   backdrop-filter: blur(33px);
   -webkit-backdrop-filter: blur(33px);
   margin-top: 10px;
@@ -28,6 +28,10 @@
 }
 
 #locales-popper .MuiPaper-root.locales-menu button:not(:hover) {
-  background-color: #00000003 !important;
+  background-color: #F6FBFF !important;
+}
+
+#locales-popper .MuiPaper-root.locales-menu button:hover {
+  background-color: #FFF !important;
 }
 /*# sourceMappingURL=localesmenu.css.map */

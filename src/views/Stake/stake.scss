@@ -41,7 +41,7 @@
     min-height: 3em;
   }
   .ohm-card.secondary .card-header {
-    min-height: 33px !important;
+    min-height: 48px !important;
     height: 20px;
   }
   .confirm-dialog {
@@ -51,7 +51,6 @@
   }
   .stake-note {
     text-align: center;
-    font-style: italic;
   }
 
   .stake-accordion {
@@ -188,10 +187,10 @@
 }
 
 .stake-action-row {
+  margin: 12px 0 24px;
   justify-content: space-around;
   align-items: center;
   height: auto;
-  padding-bottom: 1rem;
 }
 
 .mobile .stake-action-row {

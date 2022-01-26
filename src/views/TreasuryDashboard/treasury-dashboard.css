@@ -1,6 +1,7 @@
 #treasury-dashboard-view {
   overflow-y: hidden;
   overflow-x: hidden;
+  padding-top: 100px !important;
   height: 100%;
   min-width: 300px;
   display: -webkit-box;
@@ -27,6 +28,17 @@
   display: none !important;
 }
 
+#treasury-dashboard-view h4 {
+  font-weight: 800 !important;
+  font-size: 24px !important;
+}
+
+#treasury-dashboard-view h4.MuiTypography-colorTextSecondary {
+  padding-top: 2px;
+  color: #268DFF;
+  font-size: 14px !important;
+}
+
 #treasury-dashboard-view .ohm-card {
   max-width: unset !important;
   width: 100%;
@@ -42,7 +54,7 @@
 }
 
 #treasury-dashboard-view .ohm-card.ohm-chart-card .chart-card-header {
-  padding: 0px 20px !important;
+  padding: 0px 24px !important;
   min-width: 300px;
 }
 

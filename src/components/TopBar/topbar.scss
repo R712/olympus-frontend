@@ -5,9 +5,10 @@
   button {
     white-space: nowrap !important;
     overflow: hidden !important;
-    margin: 6px !important;
+    margin: 8px !important;
     min-width: fit-content !important;
-    min-height: 40px !important;
+    min-height: 42px !important;
+    backdrop-filter: blur(10px);
     &#hamburger {
       padding: 11px !important;
     }
@@ -26,9 +27,13 @@
   .MuiButton-label {
     margin-right: 0;
     transition: all 0.33s ease-out;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
   }
+}
+.MuiButton-label {
+  text-align: center;
+  justify-content: center;
 }
 #ohm-popper-pending {
   .MuiPaper-root.ohm-menu {
@@ -42,6 +47,7 @@
   right: 0.4rem;
 }
 .hovered-button {
+  background: rgba(#268DFF, .2);
   .MuiButton-label {
     margin-right: 0.5rem;
     transition: all 0.33s ease-out;

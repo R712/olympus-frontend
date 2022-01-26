@@ -38,7 +38,6 @@ function LocaleSwitcher() {
         aria-describedby={id}
       >
         <FlagIcon code={getLocaleFlag(i18n.locale)} />
-        <span>&nbsp;</span>
       </Button>
 
       <Popper id={id} open={open} anchorEl={anchorEl} placement="bottom-start" transition>
@@ -50,7 +49,6 @@ function LocaleSwitcher() {
                   {Object.keys(locales).map((locale, key) => (
                     <Button key={key} size="large" variant="contained" fullWidth onClick={() => selectLocale(locale)}>
                       <Typography align="left">
-                        &nbsp;
                         <FlagIcon code={getLocaleFlag(locale)} />
                       </Typography>
                     </Button>

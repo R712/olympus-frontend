@@ -31,10 +31,10 @@ const TreasuryDashboard = memo(() => {
             <MetricCollection>
               <MarketCap />
               <OHMPrice />
-              <GOHMPrice />
+              {/* <GOHMPrice />
               <CircSupply />
+              <CurrentIndex /> */}
               <BackingPerOHM />
-              <CurrentIndex />
             </MetricCollection>
           </Paper>
         </Box>

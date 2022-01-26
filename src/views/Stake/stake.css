@@ -61,7 +61,7 @@
 
 #stake-view .ohm-card.secondary .card-header,
 #v1-stake-view .ohm-card.secondary .card-header {
-  min-height: 33px !important;
+  min-height: 48px !important;
   height: 20px;
 }
 
@@ -75,7 +75,6 @@
 #stake-view .stake-note,
 #v1-stake-view .stake-note {
   text-align: center;
-  font-style: italic;
 }
 
 #stake-view .stake-accordion,
@@ -262,13 +261,13 @@
 }
 
 .stake-action-row {
+  margin: 12px 0 24px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   height: auto;
-  padding-bottom: 1rem;
 }
 
 .mobile .stake-action-row {

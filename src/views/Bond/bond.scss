@@ -1,5 +1,6 @@
 #bond-view {
   position: absolute !important;
+  padding-top: 100px !important;
   width: 100%;
   height: 100%;
   z-index: 69;
@@ -38,6 +39,7 @@
   .ohm-card {
     max-width: 803px;
   }
+
 
   .bond-header {
     display: flex;

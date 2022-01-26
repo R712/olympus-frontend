@@ -83,7 +83,7 @@ const useStyles = makeStyles(theme => ({
     height: "100%",
     overflow: "auto",
     marginLeft: drawerWidth,
-    paddingBottom: "10rem",
+    paddingBottom: "0",
   },
   contentShift: {
     transition: theme.transitions.create("margin", {

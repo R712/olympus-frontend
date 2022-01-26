@@ -10,7 +10,6 @@
 html,
 body,
 #root {
-  background: url('assets/images/bg-texture.png') no-repeat center fixed !important;
   font-family: "Square";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -29,10 +28,23 @@ body {
   flex-flow: column;
   flex-direction: column;
   z-index: 1;
-  background-size: cover;
   font-family: "Square";
+  line-height: 1.45;
   overflow: hidden;
   transition: all ease 0.33ms;
+  cursor: default;
+  &.dark {
+    background: url('assets/images/bg-texture-boke.png') no-repeat right bottom fixed;
+  }
+  &.light {
+    background: url('assets/images/bg-texture-light.png') no-repeat right bottom fixed;
+  }
+  background-size: cover !important;
+  .MuiContainer-root,
+  .MuiGrid-root,
+  .MuiBox-root {
+    max-width: 960px;
+  }
 }
 
 .MuiDrawer-paperAnchorDockedLeft {
@@ -41,12 +53,16 @@ body {
 
 .ohm-card {
   max-width: 833px;
+  box-shadow: 0 4px 40px rgba(#000025, 0.1) !important;
   .card-header {
     width: 100%;
     min-height: 33px;
-    margin-bottom: 10px;
     h5 {
-      font-weight: 600 !important;
+      font-weight: 700 !important;
+    }
+    .MuiTypography-body2 {
+      padding: 4px 0 0;
+      opacity: 0.4;
     }
   }
 
@@ -89,7 +105,35 @@ input[type="number"] {
 a:hover svg {
   color: inherit;
 }
+a:hover {
+  transition: all .2s ease;
+}
 
 .tooltip {
   z-index: 9999999;
+}
+
+.MuiAlert-root {
+  cursor: help;
+  background: rgba(38,141,255, 0.6) !important;
+  backdrop-filter: blur(12px);
+  border-radius: 8px !important;
+  p {
+    line-height: 1.5;
+  }
+}
+
+a,
+button,
+input[type=radio],
+input[type=checkbox] {
+  cursor: pointer;
+}
+
+input[type=text] {
+  cursor: text;
+}
+
+.MuiGrid-item {
+  padding: 12px !important;
 }

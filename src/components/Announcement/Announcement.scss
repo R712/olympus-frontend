@@ -2,8 +2,8 @@
   z-index: 5;
   align-items: center;
   justify-content: space-between;
-  margin: 0.9rem auto;
-  width: 100%;
+  margin: 24px auto;
+  width: 97%;
   .new-network {
     display: flex;
     align-items: center;
@@ -17,6 +17,9 @@
     .new-network {
       background: linear-gradient(90deg, #3a4148ee 1.58%, #333847ff 99%) !important;
     }
+  }
+  &:first-child {
+    margin-top: 80px !important;
   }
 }
 

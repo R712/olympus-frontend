@@ -4,13 +4,30 @@
 
 .chart-card-header .card-title-text {
   overflow: hidden;
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 15px;
   white-space: nowrap;
   width: auto;
   text-overflow: ellipsis;
 }
 
+.chart-card-header svg {
+  opacity: .25;
+}
+
 .ohm-chart {
-  padding: 0px 8px;
+  padding: 0px 12px;
+}
+
+.ohm-chart svg text {
+  fill: #AAA;
+  mix-blend-mode: color-dodge;
+  font-size: 11px;
+  opacity: .4;
+}
+
+.ohm-chart svg path {
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 /*# sourceMappingURL=chart.css.map */

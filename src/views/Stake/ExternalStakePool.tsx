@@ -54,7 +54,7 @@ const StakePool = ({ poolName, icons, stakeOn, href }: StakePoolProps) => {
           {poolName} {/*<br /> <span style={{ color: theme.palette.text.secondary }}>APY: {apy}</span>*/}
         </Typography>
       </Box>
-      <Box sx={{ display: "flex", flexBasis: "200px", flexGrow: 1, maxWidth: "500px" }}>
+      <Box sx={{ display: "flex", flexBasis: "180px", flexGrow: 1, maxWidth: "240px" }}>
         <Button
           className={styles.stakeOnButton}
           variant="outlined"
@@ -69,8 +69,8 @@ const StakePool = ({ poolName, icons, stakeOn, href }: StakePoolProps) => {
             style={{
               position: "absolute",
               right: 5,
-              height: `20px`,
-              width: `20px`,
+              height: `18px`,
+              width: `18px`,
               verticalAlign: "middle",
             }}
           />

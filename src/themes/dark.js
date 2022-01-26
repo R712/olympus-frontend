@@ -6,32 +6,33 @@ import commonSettings, { handleBackdropFilter } from "./global.js";
 // then set the values in darkTheme using the global color variables
 
 const darkTheme = {
-  color: "#FCFCFC",
-  gold: "#37ABFF",
-  gray: "#A3A3A3",
-  textHighlightColor: "#37ABFF",
+  spacing: "0",
+  color: "#FFF",
+  gold: "#268DFF",
+  gray: "rgba(255, 255, 255, 0.6)",
+  textHighlightColor: "#FFF",
   backgroundColor: "rgba(0, 2, 37, 1)",
   background: ``,
-  paperBg: "rgba(0, 1, 20, 0.5)",
-  modalBg: "#24242699",
-  popoverBg: "rgba(54, 56, 64, 0.99)",
+  paperBg: "rgba(38, 141, 255, 0.05)",
+  modalBg: "#00002599",
+  popoverBg: handleBackdropFilter("rgba(38, 141, 255, 0.2)"),
   menuBg: handleBackdropFilter("rgba(0, 0, 0, 0.5)"),
   backdropBg: "rgba(0, 0, 0, 0.5)",
   largeTextColor: "#37ABFF",
   activeLinkColor: "#37ABFF",
   activeLinkSvgColor:
     "brightness(0) saturate(100%) invert(84%) sepia(49%) saturate(307%) hue-rotate(326deg) brightness(106%) contrast(92%)",
-  primaryButtonColor: "#333333",
-  primaryButtonBG: "#37ABFF",
-  primaryButtonHoverBG: "#EDD8B4",
+  primaryButtonColor: "#FFF",
+  primaryButtonBG: "#268DFF",
+  primaryButtonHoverBG: "#37ABFF",
   secondaryButtonHoverBG: "rgba(54, 56, 64, 1)",
-  outlinedPrimaryButtonHoverBG: "#F8CC82",
-  outlinedPrimaryButtonHoverColor: "#333333",
+  outlinedPrimaryButtonHoverBG: "transparent",
+  outlinedPrimaryButtonHoverColor: "#000025",
   outlinedSecondaryButtonHoverBG: "transparent",
-  outlinedSecondaryButtonHoverColor: "#F8CC82", //gold
-  containedSecondaryButtonHoverBG: "rgba(255, 255, 255, 0.15)",
-  graphStrokeColor: "rgba(0, 0, 0, .5)",
-  gridButtonHoverBackground: "rgba(255, 255, 255, 0.6)",
+  outlinedSecondaryButtonHoverColor: "#268DFF", //blue
+  containedSecondaryButtonHoverBG: "rgba(38, 141, 255, 0.6)",
+  graphStrokeColor: "rgba(255, 255, 255, .2)",
+  gridButtonHoverBackground: "rgba(38, 141, 255, 0.6)",
   gridButtonActiveBackground: "#00000038",
   switchBg: "#333333",
 };
@@ -116,7 +117,7 @@ export const dark = responsiveFontSizes(
             },
             "&.ohm-menu": {
               backgroundColor: darkTheme.menuBg,
-              backdropFilter: "blur(33px)",
+              backdropFilter: "blur(64px)",
             },
             "&.ohm-popover": {
               backgroundColor: darkTheme.popoverBg,

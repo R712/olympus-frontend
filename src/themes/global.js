@@ -58,12 +58,12 @@ const commonSettings = {
     body1: {
       fontSize: "0.875rem",
       fontWeight: 500,
-      lineHeight: 1,
+      lineHeight: 1.1,
     },
     body2: {
-      fontSize: "0.75rem",
-      fontWeight: 400,
-      lineHeight: 1,
+      fontSize: "12px",
+      fontWeight: 600,
+      lineHeight: 1.1,
     },
     button: {
       textTransform: "none",
@@ -114,13 +114,13 @@ const commonSettings = {
     },
     MuiPaper: {
       root: {
-        backdropFilter: "blur(33px)",
+        backdropFilter: "blur(64px)",
         "&.ohm-card": {
           padding: "20px 30px 30px 30px",
-          borderRadius: "10px",
+          borderRadius: "16px",
           maxWidth: "833px",
           width: "97%",
-          marginBottom: "2rem",
+          marginBottom: "24px",
           overflow: "hidden",
         },
         "&.ohm-menu": {
@@ -133,7 +133,7 @@ const commonSettings = {
           whiteSpace: "nowrap",
           maxWidth: "700px",
           width: "97%",
-          marginBottom: "2rem",
+          marginBottom: "24px",
         },
       },
     },
@@ -189,37 +189,43 @@ const commonSettings = {
     MuiToggleButton: {
       root: {
         border: 0,
-        borderRadius: "5px",
+        borderRadius: "8px",
         margin: "8px",
         padding: "10px",
       },
     },
     MuiButton: {
       root: {
-        borderRadius: "5px",
+        borderRadius: "8px",
         textTransform: "none",
         textDecoration: "none",
         whiteSpace: "nowrap",
         minWidth: "max-content",
-        maxHeight: "40px",
+        maxHeight: "48px",
       },
       containedPrimary: {
         border: 0,
-        fontWeight: "500",
+        fontWeight: "700",
       },
       containedSecondary: {
         fontWeight: "400",
       },
       outlinedPrimary: {
-        height: "33px",
-        padding: "9px 20px",
+        height: "40px",
+        border: 0,
+        backgroundColor: "#000025",
+        color: "#FFF",
+        padding: "12px 16px",
+        "&:hover": {
+          border: 0,
+        },
       },
       outlinedSecondary: {
         textTransform: "none",
         textDecoration: "none",
-        height: "33px",
-        fontSize: "1.1em",
-        padding: "9px 20px",
+        height: "32px",
+        fontSize: "15px",
+        padding: "8px 16px",
       },
       text: {
         "&:hover": {

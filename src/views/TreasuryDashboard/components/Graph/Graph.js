@@ -18,7 +18,7 @@ export const TotalValueDepositedGraph = () => {
       itemNames={tooltipItems.tvl}
       dataKey={["totalValueLocked"]}
       headerText="Total Value Deposited"
-      stopColor={[["#768299", "#98B3E9"]]}
+      stopColor={[["#B8D8FFCC", "#00192F11"]]}
       bulletpointColors={bulletpoints.tvl}
       infoTooltipMessage={tooltipInfoMessages.tvl}
       expandedGraphStrokeColor={theme.palette.graphStrokeColor}
@@ -43,11 +43,11 @@ export const MarketValueGraph = () => {
         "treasuryLusdMarketValue",
       ]}
       stopColor={[
-        ["#F5AC37", "#EA9276"],
-        ["#768299", "#98B3E9"],
-        ["#DC30EB", "#EA98F1"],
-        ["#8BFF4D", "#4C8C2A"],
-        ["#ff758f", "#c9184a"],
+        ["#F2D212CC", "#00192F11"],
+        ["#B8D8FFCC", "#00192F11"],
+        ["#1DDDAFCC", "#00192F11"],
+        ["#268DFFCC", "#00192F11"],
+        ["#E85F8BCC", "#00192F11"],
       ]}
       headerText="Market Value of Treasury Assets"
       headerSubText={`${data && formatCurrency(data[0].treasuryMarketValue)}`}
@@ -71,11 +71,11 @@ export const RiskFreeValueGraph = () => {
       format="currency"
       dataKey={["treasuryDaiRiskFreeValue", "treasuryFraxRiskFreeValue", "treasuryLusdRiskFreeValue"]}
       stopColor={[
-        ["#F5AC37", "#EA9276"],
-        ["#768299", "#98B3E9"],
-        ["#ff758f", "#c9184a"],
-        ["#000", "#fff"],
-        ["#000", "#fff"],
+        ["#F2D212CC", "#00192F11"],
+        ["#B8D8FFCC", "#00192F11"],
+        ["#1DDDAFCC", "#00192F11"],
+        ["#268DFFCC", "#00192F11"],
+        ["#E85F8BCC", "#00192F11"],
       ]}
       headerText="Risk Free Value of Treasury Assets"
       headerSubText={`${data && formatCurrency(data[0].treasuryRiskFreeValue)}`}
@@ -106,7 +106,7 @@ export const ProtocolOwnedLiquidityGraph = () => {
       headerText="Protocol Owned Liquidity OHM-DAI"
       expandedGraphStrokeColor={theme.palette.graphStrokeColor}
       headerSubText={`${data && trim(data[0].treasuryOhmDaiPOL, 2)}% `}
-      stopColor={[["rgba(128, 204, 131, 1)", "rgba(128, 204, 131, 0)"]]}
+      stopColor={[["#B8D8FF", "#000025"]]}
     />
   );
 };
@@ -132,7 +132,7 @@ export const OHMStakedGraph = () => {
       dataKey={["staked"]}
       dataFormat="percent"
       headerText="OHM Staked"
-      stopColor={[["#55EBC7", "#47ACEB"]]}
+      stopColor={[["#B8D8FF", "#000025"]]}
       bulletpointColors={bulletpoints.staked}
       infoTooltipMessage={tooltipInfoMessages.staked}
       expandedGraphStrokeColor={theme.palette.graphStrokeColor}

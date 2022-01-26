@@ -6,8 +6,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0.9rem auto;
-  width: 100%;
+  margin: 24px auto;
+  width: 97%;
 }
 
 .announcement-banner .new-network {
@@ -31,6 +31,10 @@
     background: -webkit-gradient(linear, left top, right top, color-stop(1.58%, #3a4148ee), color-stop(99%, #333847ff)) !important;
     background: linear-gradient(90deg, #3a4148ee 1.58%, #333847ff 99%) !important;
   }
+}
+
+.announcement-banner:first-child {
+  margin-top: 80px !important;
 }
 
 .mobile .announcement-banner {
